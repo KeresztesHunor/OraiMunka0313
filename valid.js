@@ -1,17 +1,9 @@
-window.addEventListener("load", () =>
-{
-
-});
-
 function validateForm()
 {
-	if (document.validTeszt.fNev.value === "")
+    const HELYES = document.validTeszt.fNev.value === "";
+	if (!HELYES)
     {
     	alert("A mező kitöltése kötelező!");
-    	return false;
 	}
-    else
-    {
-        return true;
-    }
+    return HELYES;
 }
