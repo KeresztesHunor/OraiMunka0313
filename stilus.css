@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.sor {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+input {
+  width: 25%;
+}
+
+input[type="submit"] {
+  width: 75px;
+}

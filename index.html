@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stilus.css" />
+    <script src="main.js"></script>
+    <title>Keresztes Hunor</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section>
+          <form
+            name="validTeszt"
+            method="get"
+            action="#"
+            onsubmit="return validateForm();"
+          >
+            <div class="sor">
+              <label for="email">E-mail cím:</label>
+              <input type="text" id="email" name="email" />
+            </div>
+            <div class="sor">
+              <label for="fNev">Felhasználónév:</label>
+              <input type="text" id="fNev" name="fNev" />
+            </div>
+            <div class="sor">
+              <label for="jSzo1">Jelszó:</label>
+              <input type="password" id="jSzo1" name="jSzo1" />
+            </div>
+            <div class="sor">
+              <label for="jSzo2">Jelszó mégegyszer:</label>
+              <input type="password" id="jSzo2" name="jSzo2" />
+            </div>
+            <input type="submit" value="Küldés" />
+          </form>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
