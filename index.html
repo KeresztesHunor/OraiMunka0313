@@ -16,7 +16,7 @@
             name="validTeszt"
             method="get"
             action="#"
-            onsubmit="return validateForm();"
+            onsubmit="return validatePassword();"
           >
             <div class="sor">
               <label for="fNev">Felhasználónév:</label>
@@ -33,11 +33,21 @@
             </div>
             <div class="sor">
               <label for="jSzo1">Jelszó:</label>
-              <input type="password" id="jSzo1" name="jSzo1" />
+              <input
+                type="password"
+                id="jSzo1"
+                name="jSzo1"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!-\/:-@\[-`{-~])[A-Za-z\d!-\/:-@\[-`{-~]{8,}"
+              />
             </div>
             <div class="sor">
               <label for="jSzo2">Jelszó mégegyszer:</label>
-              <input type="password" id="jSzo2" name="jSzo2" />
+              <input
+                type="password"
+                id="jSzo2"
+                name="jSzo2"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!-\/:-@\[-`{-~])[A-Za-z\d!-\/:-@\[-`{-~]{8,}"
+              />
             </div>
             <input type="submit" value="Küldés" />
           </form>
